@@ -1,7 +1,0 @@
-/* 
-
-ID
-NAME
-HEIGHT
-WEIGHT
-*/
