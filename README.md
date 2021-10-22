@@ -1,3 +1,3 @@
 # pokedex
 
-Made with Vanilla JavaScript and SCSS. Fetching data from PokéAPI.
+Pokédex, made with Vanilla JavaScript and SCSS. Fetching data from PokéAPI.
