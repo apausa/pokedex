@@ -12,14 +12,14 @@
         <h1 class="header__title">Pokédex</h1>
         <nav class="header__navigation">
             <div>
-                <a class="navigation__left" onclick="before()">Before</a>
-                <a class="navigation__left" onclick="after()">Next</a>
+                <button class="navigation__left" onclick="before()">Before</button>
+                <button class="navigation__left" onclick="after()">Next</button>
             </div>
             <div>
-                <a class="navigation__right" onclick="pagination(16)">16</a>
-                <a class="navigation__right"  onclick="pagination(32)">32</a>
-                <a class="navigation__right"  onclick="pagination(64)">64</a>
-                <a class="navigation__right"  onclick="pagination(128)">128</a>
+                <button class="navigation__right" onclick="pagination(16)">16</button>
+                <button class="navigation__right"  onclick="pagination(32)">32</button>
+                <button class="navigation__right"  onclick="pagination(64)">64</button>
+                <button class="navigation__right"  onclick="pagination(128)">128</button>
             </div>
         </nav>
     </header>
@@ -28,9 +28,9 @@
 
         </ul>
     </main>
-    <script src="pokemonsNavigation.class.js"></script>
-    <script src="../../services/pokemons.service.js"></script>
-    <script src="pokemonsPage.class.js"></script>
-    <script src="pokemons.js"></script>
+    <script src="navigation.js"></script>
+    <script src="../../services/pokeapi.js"></script>
+    <script src="pokemon.js"></script>
+    <script src="pokedex.js"></script>
 </body>
 </html>
