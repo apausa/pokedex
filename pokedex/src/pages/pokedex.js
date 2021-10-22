@@ -1,4 +1,4 @@
-class Eva {
+class Index {
     constructor() {
         offset = multiply(limit, page);
         const pokemonsPage = new PokemonsPage();
@@ -8,8 +8,8 @@ class Eva {
 }
 
 let offset;
-let [limit, page] = [5, 0];
+let [limit, page] = [16, 0];
 const multiply = (a, b) => Math.floor(a * b);
 const COUNT = 1118;
 const last = Math.floor(COUNT / limit);
-const eva = new Eva();
+const index = new Index();

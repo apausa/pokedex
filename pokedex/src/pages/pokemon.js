@@ -10,10 +10,12 @@ class PokemonsPage {
     setView() {
         const pokeapi = `https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`;
         retrievePokemons(pokeapi)
-        .then(({ results }) => Promise.all(results.map(({ url }) => retrievePokemons(url))))
-        .then((pokemons) => {
-            this.pokemons = pokemons.map(({ id, name, sprites }) => ({
-                id, name, sprites: sprites.front_default })); 
+        .then(({ results }) => Promise.all(results.map(({ url }) => {
+            return retrievePokemons(url)})))
+        .then((pokemons) => { 
+            this.pokemons = pokemons.map(({ id, name, sprites }) => { 
+                return { id, name, sprites: sprites.front_default };
+            }); 
             this.pokedex();
         });
     };
