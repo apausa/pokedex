@@ -16,11 +16,11 @@ class PokemonsPage {
             this.pokemons = pokemons.map(({ id, name, sprites }) => { 
                 return { id, name, sprites: sprites.front_default };
             }); 
-            this.print();
+            this.pokedex();
         });
     };
-
-    print() {
+    
+    pokedex() {
         this.pokemons.forEach(({ id, name, sprites }) => {
             let Name = name.charAt(0).toUpperCase() + name.slice(1);
             let pokemon = `<li class="pokedex__pokemon">

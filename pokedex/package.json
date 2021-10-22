@@ -4,17 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll --collect-coverage"
+    "css": "node-sass --include-path scss src/styles/styles.scss src/styles/styles.css",
+    "watch": "nodemon -e scss -x 'npm run css'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jest": "^27.0.6"
+    "axios": "^0.23.0",
+    "jest": "^27.0.6",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.14",
+    "sass": "^1.43.3"
   },
   "devDependencies": {
-    "eslint": "^7.31.0",
+    "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.23.4"
+    "eslint-plugin-import": "^2.25.2"
   }
 }
