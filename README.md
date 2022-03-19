@@ -1,3 +1,3 @@
 # pokedex
 
-Frontend application built in Vanilla JavaScript. Fetching data from PokéAPI. 
+Frontend application built in Vanilla JavaScript and SCSS. Fetching data from PokéAPI. 
